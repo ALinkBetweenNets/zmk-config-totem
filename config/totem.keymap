@@ -440,6 +440,24 @@
             mods = <(MOD_LSFT)>;
         };
 
+        alt_tab_w: alt_tab_w {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_TAB_W";
+            bindings = <&kp W>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        alt_tab_oe: alt_tab_oe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_TAB_OE";
+            bindings = <&kp SEMI>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
         mt_hmr_comma_gt: mt_hmr_comma_gt {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HMR_COMMA_GT";
@@ -635,7 +653,7 @@
 bindings = <
     &kp Y  &kp Z  &kp U  &kp A  &kp Q     &kp P  &kp B  &kp M  &kp L  &kp MINUS
     &kp C  &kp S  &kp I  &kp E  &kp O     &kp D  &kp T  &kp N  &kp R  &kp H
-    &kp TAB &kp V &kp X &kp LBKT &kp APOS &kp SEMI        &kp W &kp G &kp F &kp J &kp K &mt RALT DOT
+    &kp TAB &kp V &kp X &kp LBKT &kp APOS &alt_tab_oe     &alt_tab_w &kp G &kp F &kp J &kp K &mt RALT DOT
                      &kp BSPC &mo 1 &kp LSHIFT &kp SPACE &mo 2 &kp ENTER
 >;
          };
