@@ -447,6 +447,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         alt_tab_oe: alt_tab_oe {
@@ -456,6 +457,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         mt_hmr_comma_gt: mt_hmr_comma_gt {
